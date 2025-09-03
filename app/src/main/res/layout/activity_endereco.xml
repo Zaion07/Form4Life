@@ -1,0 +1,34 @@
+<!-- app/src/main/res/layout/activity_endereco.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputRua"
+        android:hint="Rua"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/inputCidade"
+        android:hint="Cidade"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnVoltarEndereco"
+            android:text="Voltar"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnProximoEndereco"
+            android:text="Próximo"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

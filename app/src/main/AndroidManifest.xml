@@ -1,0 +1,21 @@
+<!-- app/src/main/AndroidManifest.xml -->
+<manifest package="com.example.quadtelas" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:label="QuatroTelas"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        <activity android:name=".ResumoActivity" />
+        <activity android:name=".PreferenciasActivity" />
+        <activity android:name=".EnderecoActivity" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
